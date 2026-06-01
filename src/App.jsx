@@ -1,14 +1,14 @@
 import React, { useState } from 'react'
-import ProductList from './components/ProductList'
+import ProductList, { sampleProducts } from './components/ProductList'
 import DarkModeToggle from './components/DarkModeToggle'
 import Cart from './components/Cart'
 
 // Sample dataset aligned with the dropdown options
 const initialProducts = [
-  { id: 1, name: "Apple", category: "Fruits" },
-  { id: 2, name: "Banana", category: "Fruits" },
-  { id: 3, name: "Milk", category: "Dairy" },
-  { id: 4, name: "Yogurt", category: "Dairy" },
+  { id: 1, name: "Apple", category: "Fruits", inStock: true},
+  { id: 2, name: "Banana", category: "Fruits", inStock: true},
+  { id: 3, name: "Milk", category: "Dairy", inStock: true},
+  { id: 4, name: "Yogurt", category: "Dairy", inStock: true},
 ]
 
 const App = () => {

@@ -9,7 +9,7 @@ const DarkModeToggle = ({ isDarkMode, setIsDarkMode }) => {
   return (
     <button onClick={handleToggle}>
       {/* TODO: Update this text from Dark to Light dynamically */}
-      {isDarkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
+      {isDarkMode ? 'Toggle Light Mode' : 'Toggle Dark Mode'}
     </button>
   )
 }
