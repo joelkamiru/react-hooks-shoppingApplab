@@ -16,6 +16,7 @@ const App = () => {
   const [isDarkMode, setIsDarkMode] = useState(false)
 
   // TODO: Implement state for cart management
+  const [products, setProducts] = useState(sampleProducts)
   const [cart, setCart] = useState([])
 
   // TODO: Implement state for category filtering
@@ -27,7 +28,7 @@ const App = () => {
   }
 
   // Filter products based on dropdown selection
-  const filteredProducts = initialProducts.filter(product => {
+  const filteredProducts = products.filter(product => {
     if (selectedCategory === 'all') return true
     return product.category === selectedCategory
   })
